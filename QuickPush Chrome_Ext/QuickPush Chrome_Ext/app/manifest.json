@@ -8,6 +8,17 @@
   "permissions": [
     "https://secure.flickr.com/"
   ],
+
+  "background": {
+    "scripts": ["common/js/jquery-2.2.0.min.js", "common/materialize-css/js/bin/materialize.min.js"],
+    "persistent": false
+  }, 
+
+  "content_scripts": [ {
+    "js": [ "popup.js" ],
+    "matches": [ "http://*/*", "https://*/*"]
+  }],
+
   "browser_action": {
     "default_icon": "common/img/icon.png",
     "default_popup": "popup.html"

@@ -3,6 +3,9 @@
   <head>
     <title>Getting Started Extension's Popup</title>
     <link rel="stylesheet" href="common/font-awesome-4.5.0/css/font-awesome.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="common/materialize-css/sass/materialize.css">
+
     <style>
       body {
         min-width: 357px;
@@ -24,10 +27,31 @@
       -
       - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
      -->
-    <script src="popup.js"></script>
   </head>
   <body>
-      <span class="fa fa-android fa-lg fa-5x"></span>
+      <nav>
+          <div class="nav-wrapper">
+              <a href="#!" class="brand-logo">Logo</a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+              <ul class="right hide">
+                  <li><a href="sass.html">Sass</a></li>
+                  <li><a href="badges.html">Components</a></li>
+                  <li><a href="collapsible.html">Javascript</a></li>
+                  <li><a href="mobile.html">Mobile</a></li>
+              </ul>
+              <ul class="side-nav" id="mobile-demo">
+                  <li><a href="sass.html">Sass</a></li>
+                  <li><a href="badges.html">Components</a></li>
+                  <li><a href="collapsible.html">Javascript</a></li>
+                  <li><a href="mobile.html">Mobile</a></li>
+              </ul>
+          </div>
+      </nav>
+
+      <div class="container">
+          <!-- Page Content goes here -->
+          <a class="waves-effect waves-light btn"><i class="material-icons left fa fa-android fa-lg"></i>button</a>
+      </div>
   </body>
 </html>
 

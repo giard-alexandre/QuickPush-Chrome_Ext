@@ -79,5 +79,12 @@ var kittenGenerator = {
 
 // Run our kitten generation script as soon as the document's DOM is ready.
 document.addEventListener('DOMContentLoaded', function () {
-  kittenGenerator.requestKittens();
+    //kittenGenerator.requestKittens();
+    
 });
+
+function ext_ready() {
+    $(".button-collapse").sideNav();
+}
+
+window.onload = ext_ready;

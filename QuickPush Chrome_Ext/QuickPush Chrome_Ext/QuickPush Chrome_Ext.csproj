@@ -44,6 +44,7 @@
     <Content Include="app\common\font-awesome-4.5.0\fonts\fontawesome-webfont.svg" />
     <Content Include="app\common\font-awesome-4.5.0\HELP-US-OUT.txt" />
     <Content Include="app\common\img\icon.png" />
+    <Content Include="app\common\js\jquery-2.2.0.min.js" />
     <Content Include="app\common\materialize-css\font\material-design-icons\LICENSE.txt" />
     <Content Include="app\common\materialize-css\font\material-design-icons\Material-Design-Icons.svg" />
     <Content Include="app\common\materialize-css\js\animation.js" />
@@ -78,6 +79,9 @@
     <Content Include="app\common\materialize-css\js\transitions.js" />
     <Content Include="app\common\materialize-css\js\velocity.min.js" />
     <Content Include="app\common\materialize-css\js\waves.js" />
+    <Content Include="app\common\materialize-css\sass\materialize.css">
+      <DependentUpon>materialize.scss</DependentUpon>
+    </Content>
     <Content Include="app\popup.html" />
     <Content Include="app\popup.js" />
     <Content Include="Properties\build\lib\Ionic.Zip.DLL" />
