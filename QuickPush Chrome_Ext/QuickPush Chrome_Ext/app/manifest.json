@@ -9,7 +9,7 @@
     "https://secure.flickr.com/"
   ],
   "browser_action": {
-    "default_icon": "img/icon.png",
+    "default_icon": "common/img/icon.png",
     "default_popup": "popup.html"
   }
 }
