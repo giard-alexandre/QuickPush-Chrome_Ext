@@ -84,7 +84,13 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function ext_ready() {
-    $(".button-collapse").sideNav();
+    // Navbar attachment
+    $('.button-collapse').sideNav({
+        menuWidth: 140, // Default is 240
+        edge: 'left', // Choose the horizontal origin
+        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+    );
 }
 
 window.onload = ext_ready;

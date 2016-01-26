@@ -5,22 +5,55 @@
   "description": "This extension demonstrates a browser action with kittens.",
   "version": "1.0",
 
-  "permissions": [
-    "https://secure.flickr.com/"
-  ],
-
-  "background": {
-    "scripts": ["common/js/jquery-2.2.0.min.js", "common/materialize-css/js/bin/materialize.min.js"],
-    "persistent": false
-  }, 
-
-  "content_scripts": [ {
-    "js": [ "popup.js" ],
-    "matches": [ "http://*/*", "https://*/*"]
-  }],
-
   "browser_action": {
     "default_icon": "common/img/icon.png",
     "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs",
+    "identity",
+    "*://*.google.com/*",
+    "notifications"
+  ],
+  /*"oauth2": {
+    "client_id": "336587574421-epr97u1q0gch6tpckeav646s8dqpl7ak.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/gmail.send",
+      "https://mail.google.com/",
+      "https://www.googleapis.com/auth/plus.me",
+      "https://www.googleapis.com/auth/gmail.compose",
+      "email",
+      "profile"
+    ]
+  },*/
+
+  "content_scripts": [
+    {
+      "web_accessible_resources": [
+        "common/materialize-css/font/*.woff2"
+      ],
+      "js": [
+        "common/js/jquery-2.2.0.min.js",
+        "popup.js",
+        "common/materialize-css/js/bin/materialize.min.js"
+      ],
+      "css": ["common/css/Global.css"],
+      "matches": [
+        "file:///*/*"
+      ]
+    }
+  ],
+
+  "background": {
+    "scripts": [
+      "common/js/jquery-2.2.0.min.js",
+      "common/materialize-css/js/bin/materialize.min.js"
+    ],
+    "persistent": true
   }
+
+  
 }
