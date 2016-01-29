@@ -1,9 +1,11 @@
 {
   "manifest_version": 2,
 
-  "name": "One-click Kittens",
+  "name": "QuickPush",
+  "short_name": "QPush",
   "description": "This extension demonstrates a browser action with kittens.",
   "version": "1.0",
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com 'unsafe-eval'; object-src 'self' ",
 
   "browser_action": {
     "default_icon": "common/img/icon.png",
@@ -18,17 +20,7 @@
     "*://*.google.com/*",
     "notifications"
   ],
-  /*"oauth2": {
-    "client_id": "336587574421-epr97u1q0gch6tpckeav646s8dqpl7ak.apps.googleusercontent.com",
-    "scopes": [
-      "https://www.googleapis.com/auth/gmail.send",
-      "https://mail.google.com/",
-      "https://www.googleapis.com/auth/plus.me",
-      "https://www.googleapis.com/auth/gmail.compose",
-      "email",
-      "profile"
-    ]
-  },*/
+
 
   "content_scripts": [
     {
