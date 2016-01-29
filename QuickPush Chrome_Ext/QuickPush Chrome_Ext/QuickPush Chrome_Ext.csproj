@@ -86,6 +86,8 @@
       <DependentUpon>materialize.scss</DependentUpon>
     </Content>
     <Content Include="app\modules\connection\background.js" />
+    <Content Include="app\modules\messaging\messaging.html" />
+    <Content Include="app\modules\pushing\pushes.html" />
     <Content Include="app\popup.html" />
     <Content Include="app\popup.js" />
     <Content Include="Properties\build\lib\Ionic.Zip.DLL" />

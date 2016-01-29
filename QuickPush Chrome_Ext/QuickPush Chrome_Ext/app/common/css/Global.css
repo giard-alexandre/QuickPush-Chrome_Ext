@@ -1,7 +1,10 @@
-body {
+html {
   min-width: 357px;
-  min-height: 500px;
+  min-height: 500px; }
+
+body {
   overflow-x: hidden;
+  overflow-y: scroll;
   background-color: #eeeded; }
 
 /*# sourceMappingURL=Global.css.map */
